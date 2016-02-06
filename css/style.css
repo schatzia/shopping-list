@@ -2,6 +2,7 @@ body{
 	background-color: #e1e1e1;
 	font-family: "Lato", Open Sans, Oswald, sans-serif;
 	font-size: 1.1em;
+	box-sizing: border-box;
 }
 header{
 	margin-left:10px;
@@ -11,7 +12,7 @@ hr{
 	margin-top: 40px;
 	width: 20%;
 }
-.main-content{
+.add-section{
 	background: url('../images/bg-list2.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -40,4 +41,60 @@ hr{
 	text-align: center;
 	font-size: 12px;
 	color: #dadada;
+}
+.list-item{
+	width: 400px;
+	height: 30px;
+	background-color: #566e7a;
+	border: 1px #566e7a solid;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #dadada;
+	margin: 10px auto;
+}
+.arrow-right, .checked-item-arrow{
+	float: left;
+	font-size: 16px;
+	color: #00FFCA;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+.item-name{
+	/* margin: 7px auto; */
+	font-size: 16px;	
+	vertical-align: middle;
+}
+.delete-item, .delete-item-checked{
+	float: right;
+	font-size: 20px;
+	color: #CC1427;
+	margin-top: 1px;
+	margin-right: 10px;
+}
+div.checked{
+	text-decoration: line-through;
+}
+.delete-item-checked{
+	color: #C5CBCC;
+	/*B4E6FF; */
+}
+.clear-list-button{
+	width: 100px;
+	height: 30px;
+	display: inline-block;
+	margin: 10px auto;
+	background-color: #A2CFE5;
+	border: 1px #A2CFE5 solid;
+	border-radius: 10px;
+	padding: 5px;
+	font-size: 16px;
+	color: #2D3940;
+	text-align: center;
+	cursor: pointer;
+}
+.clear-list-button:hover{
+	background-color: #2D3940;
+	border: 1px #2D3940 solid;
+	color: white;
 }
