@@ -87,7 +87,7 @@ hr{
 	margin-right: 10px;
 	cursor: pointer;
 }
-div.checked{
+li.checked{
 	text-decoration: line-through;
 }
 .clear-list-button{
