@@ -8,6 +8,19 @@ header{
 	margin-left:10px;
 	color: #566e7a;
 }
+footer{
+	background-color: white;
+	height: 50px;
+	text-align: center;
+}
+footer p{
+	display: inline-block;
+	position: relative;	
+	margin-top: 20px auto;
+}
+h1{
+	font-size: 1.4em;
+}
 hr{
 	margin-top: 40px;
 	width: 20%;
@@ -39,7 +52,7 @@ hr{
 	border: 1px #566e7a solid;
 	border-radius: 10px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 0.8em;
 	color: #dadada;
 }
 .list-item{
@@ -49,9 +62,10 @@ hr{
 	border: 1px #566e7a solid;
 	border-radius: 10px;
 	text-align: center;
-	font-size: 12px;
+	font-size: 0.9em;
 	color: #dadada;
 	margin: 10px auto;
+	cursor: pointer;
 }
 .arrow-right, .checked-item-arrow{
 	float: left;
@@ -65,24 +79,22 @@ hr{
 	font-size: 16px;	
 	vertical-align: middle;
 }
-.delete-item, .delete-item-checked{
+.delete-item{
 	float: right;
 	font-size: 20px;
 	color: #CC1427;
 	margin-top: 1px;
 	margin-right: 10px;
+	cursor: pointer;
 }
 div.checked{
 	text-decoration: line-through;
 }
-.delete-item-checked{
-	color: #C5CBCC;
-	/*B4E6FF; */
-}
 .clear-list-button{
 	width: 100px;
 	height: 30px;
-	display: inline-block;
+	display: block;
+	position: relative;
 	margin: 10px auto;
 	background-color: #A2CFE5;
 	border: 1px #A2CFE5 solid;
@@ -97,4 +109,23 @@ div.checked{
 	background-color: #2D3940;
 	border: 1px #2D3940 solid;
 	color: white;
+}
+@media screen and (max-width: 500px){
+	.how-to-add{
+		font-size: 0.8em;
+	}
+	#add-to-list{
+	width: 250px;
+	border-radius: 5px;
+	font-size: 0.6em;
+	}
+	.list-item{
+	width: 250px;
+	border-radius: 5px;
+	font-size: 0.7em;
+	margin: 5px auto;
+	}
+	h1{
+		font-size: 0.8em;
+	}
 }
