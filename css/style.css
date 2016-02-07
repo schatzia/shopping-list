@@ -30,22 +30,22 @@ hr{
 	background-repeat: no-repeat;
 	background-position: center center;
 	margin-top: 20px;
-	height: 500px;
+	height: 400px;
 	text-align: center;
 }
 .list-icon{
-	padding-top: 60px;
+	padding-top: 40px;
 	position: relative;
 }
 .how-to-add{
-	padding-top: 60px;
+	padding-top: 20px;
 	font-size: 1.2em;
 	color: white;
 }
 .input-field{
-	padding-top: 30px;
+	padding-top: 10px;
 }
-#add-to-list{
+#add-to-list, #add-to-list:focus{
 	width: 400px;
 	height: 30px;
 	background-color: #566e7a;
@@ -54,6 +54,9 @@ hr{
 	text-align: center;
 	font-size: 0.8em;
 	color: #dadada;
+}
+.shopping-list{
+	padding:0;
 }
 .list-item{
 	width: 400px;
@@ -64,14 +67,16 @@ hr{
 	text-align: center;
 	font-size: 0.9em;
 	color: #dadada;
-	margin: 10px auto;
+	margin: 10px auto;	
+}
+.item-name{
 	cursor: pointer;
 }
 .arrow-right, .checked-item-arrow{
 	float: left;
 	font-size: 16px;
 	color: #00FFCA;
-	margin-top: 5px;
+	margin-top: 7px;
 	margin-left: 10px;
 }
 .item-name{
@@ -83,13 +88,19 @@ hr{
 	float: right;
 	font-size: 20px;
 	color: #CC1427;
-	margin-top: 1px;
+	margin-top: 3px;
 	margin-right: 10px;
 	cursor: pointer;
 }
-li.checked{
+.checked{
 	text-decoration: line-through;
+	background-color: #87ACBF;
+	border: 1px #87ACBF solid;
 }
+.unchecked{
+	text-decoration: none;
+}
+
 .clear-list-button{
 	width: 100px;
 	height: 30px;
