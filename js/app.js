@@ -8,15 +8,16 @@ $(document).ready(function() {
 			$('.shopping-list li:first-child').hide().fadeIn(1000);
 			$('input').val('Type your text here!').blur();
 		}
+		$('button').click(function(){
+			$('.list-item').remove();
+		});
 	});
 	$(document).on('click', '.item-name', function(){
 		if($(this).closest('li').hasClass('checked')){
-			console.log('ok'); 
 			$(this).siblings('i.fa-check').removeClass('fa-check').addClass('fa-chevron-right').load();
 			$(this).closest('li').removeClass('checked').addClass('unchecked').load();
 		}
 		else{
-			console.log('ok ok');
 			$(this).siblings('i.fa-chevron-right').removeClass('fa-chevron-right').addClass('fa-check').load();
 			$(this).closest('li').removeClass('unchecked').addClass('checked').load();
 		}

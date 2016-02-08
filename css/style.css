@@ -45,7 +45,11 @@ hr{
 .input-field{
 	padding-top: 10px;
 }
-#add-to-list, #add-to-list:focus{
+.show-list-section{
+	text-align: center;
+	color: #566e7a;
+}
+#add-to-list{
 	width: 400px;
 	height: 30px;
 	background-color: #566e7a;
@@ -54,6 +58,9 @@ hr{
 	text-align: center;
 	font-size: 0.8em;
 	color: #dadada;
+}
+#add-to-list:focus{
+	outline: 0;
 }
 .shopping-list{
 	padding:0;
@@ -110,7 +117,6 @@ hr{
 	background-color: #A2CFE5;
 	border: 1px #A2CFE5 solid;
 	border-radius: 10px;
-	padding: 5px;
 	font-size: 16px;
 	color: #2D3940;
 	text-align: center;
@@ -121,6 +127,10 @@ hr{
 	border: 1px #2D3940 solid;
 	color: white;
 }
+.clear-list-button:focus{
+	outline: 0;
+}
+
 @media screen and (max-width: 500px){
 	.how-to-add{
 		font-size: 0.8em;
