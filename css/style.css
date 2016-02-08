@@ -29,6 +29,7 @@ hr{
 	background: url('../images/bg-list2.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-size: cover;
 	margin-top: 20px;
 	height: 400px;
 	text-align: center;
